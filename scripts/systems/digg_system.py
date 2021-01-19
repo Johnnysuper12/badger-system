@@ -239,7 +239,6 @@ class DiggSystem:
     def deploy_constant_oracle(self):
         deployer = self.owner
         self.constantOracle = ConstantOracle.deploy(
-            CONSTANT_ORACLE_VALUE,
             self.cpiMedianOracle,
             {'from': deployer},
         )
