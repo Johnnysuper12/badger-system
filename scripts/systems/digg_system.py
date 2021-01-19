@@ -226,7 +226,6 @@ class DiggSystem:
             self.devProxyAdmin.address,
             self.logic.UFragments.initialize.encode_input(
                 self.owner,
-                self.config.rebaseStartTimeUnixSeconds,
             ),
             deployer,
         )
